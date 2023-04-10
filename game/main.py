@@ -6,12 +6,12 @@ display = pygame.display.set_mode((640, 480))
 print("Hello, world!")
 #Definitions
 def drawtext(string, fs, x, y, r, g, b):
-    textfont = pygame.font.SysFont('Open Sans', fs)
+    textfont = pygame.font.SysFont('arial', fs)
     textbox = textfont.render(str(string), False, (r, g, b))
     display.blit(textbox, (x, y))
 #Initialize variables
 BGCOLOR = (47, 47, 47)
-bananas = 1
+bananas = float(1)
 trees = 0
 treecost = 1
 tickrate = 1
